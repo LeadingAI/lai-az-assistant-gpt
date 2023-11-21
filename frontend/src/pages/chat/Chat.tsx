@@ -9,7 +9,7 @@ import uuid from 'react-uuid';
 import { isEmpty } from "lodash-es";
 
 import styles from "./Chat.module.css";
-import Azure from "../../assets/lai-alpha-100.svg";
+import Azure from "../../assets/fuzzylai500.svg";
 
 import {
     ChatMessage,
@@ -576,7 +576,11 @@ const Chat = () => {
                                     aria-hidden="true"
                                 />
                                 <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>This chatbot is configured to answer your questions</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>This AI Assistant is configured to answer your questions</h2>
+                                <h5 className={styles.chatEmptyStateSubtitle} style={{ fontSize: '8px', fontStyle: 'italic', maxWidth: '600px' }}>
+  Disclaimer: MAT Assist is trained on publicly available information from the Department for Education (DfE) and related bodies such as the Education and Skills Funding Agency (ESFA). AI tools can sometimes return incomplete or incorrect information. While we have taken steps to mitigate this risk to resolve this problem, you should always check the reference sources and information for yourself.
+</h5>
+
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
