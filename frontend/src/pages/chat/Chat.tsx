@@ -570,15 +570,16 @@ const Chat = () => {
                     <div className={styles.chatContainer}>
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
-                                <img
+{/*}                             <img
                                     src={Azure}
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
+                        */}
                                 <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
                                 <h2 className={styles.chatEmptyStateSubtitle}>This AI Assistant is configured to answer your questions</h2>
                                 <h5 className={styles.chatEmptyStateSubtitle} style={{ fontSize: '8px', fontStyle: 'italic', maxWidth: '600px' }}>
-  Disclaimer: MAT Assist is trained on publicly available information from the Department for Education (DfE) and related bodies such as the Education and Skills Funding Agency (ESFA). AI tools can sometimes return incomplete or incorrect information. While we have taken steps to mitigate this risk to resolve this problem, you should always check the reference sources and information for yourself.
+                                Disclaimer: MAT Assist is trained on publicly available information from the Department for Education (DfE) and related bodies such as the Education and Skills Funding Agency (ESFA). AI tools can sometimes return incomplete or incorrect information. While we have taken steps to mitigate this risk, you should always check the reference sources and information for yourself.
 </h5>
 
                             </Stack>
@@ -662,6 +663,7 @@ const Chat = () => {
                                     disabled={disabledButton()}
                                     aria-label="start a new chat button"
                                 />}
+                                {/*}
                                 <CommandBarButton
                                     role="button"
                                     styles={{ 
@@ -680,6 +682,7 @@ const Chat = () => {
                                     disabled={disabledButton()}
                                     aria-label="clear chat button"
                                 />
+                                */}
                                 <Dialog
                                     hidden={hideErrorDialog}
                                     onDismiss={handleErrorDialogClose}
